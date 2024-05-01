@@ -1,0 +1,90 @@
+
+
+
+.calculator {
+  box-sizing: border-box;
+  display: flex;
+  background-color: pink;
+  width: 244.80px;
+  height: 400px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 10px;
+}
+
+.calculator-screen {
+  box-sizing: border-box;
+  height: 50px;
+  width: 100%;
+  user-select: none;
+  font-size: 60px;
+  color: white;
+  background-color: pink;
+  border: none;
+  user-select: none;
+  cursor: auto;
+  text-align: right;
+}
+
+
+
+.button {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+  font-size: large;
+  background-color: hsl(54, 100%, 71%);
+  color: black;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+
+
+.button:hover {
+  background-color: hsl(54, 97%, 56%);
+}
+
+button:active {
+  border: 5px solid pink;
+  font-size: small;
+}
+
+.operation-button:hover {
+  background-color: hsl(180, 97%, 60%);;
+}
+
+.operation-button {
+  background-color: hsl(180, 97%, 75%);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.number-0 {
+  border-radius: 10px;
+  width: 115px;
+}
+
+#button-clear {
+  border: none;
+  border-radius: 10px;
+  width: 175px;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+}
+
+#button-clear:active {
+  border-top: 5px solid pink;
+  border-left: 5px solid pink;
+  border-bottom: none;
+  border-right: none;
+}
+
