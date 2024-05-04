@@ -2,7 +2,7 @@
 
 
 .calculator {
-  box-sizing: border-box;
+  border: 3px solid hsl(180, 97%, 75%);
   display: flex;
   background-color: pink;
   width: 244.80px;
@@ -13,18 +13,22 @@
   border-radius: 10px;
 }
 
-.calculator-screen {
+.calculator-screen { 
   box-sizing: border-box;
   height: 50px;
   width: 100%;
   user-select: none;
   font-size: 60px;
   color: white;
-  background-color: pink;
+  background-color: rgb(248, 217, 222);
   border: none;
   user-select: none;
   cursor: auto;
   text-align: right;
+  flex-grow: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 5px solid white;
 }
 
 

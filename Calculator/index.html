@@ -9,32 +9,34 @@
 <body>
   <div class = 'calculator'>
 
-      <input type="text" class="calculator-screen"
+      <input type="number"
+      placeholder="0"
+      class="calculator-screen"
       disabled>
-    <div class = 'row1 row'><button class = 'button' id = 'button-clear'>AC</button>
-      <button class = 'button operation-button'>÷</button>
+    <div class = 'row1 row' onclick="clearScreen()"><button class = 'button' id = 'button-clear'>AC</button>
+      <button class = 'button operation-button' onclick="updateOperator('s')">÷</button>
     </div>
     <div class = 'row2 row'>
-      <button class = 'button'>7</button>
-    <button class = 'button'>8</button>
-    <button class = 'button'>9</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('7')">7</button>
+    <button class = 'button' onclick="updateCurrentDisplayValue('8')">8</button>
+    <button class = 'button' onclick="updateCurrentDisplayValue('9')">9</button>
     <button class = 'button operation-button'>x</button>
     </div>
     <div class = 'row3 row'>
-      <button class = 'button'>4</button>
-      <button class = 'button'>5</button>
-      <button class = 'button'>6</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('4')">4</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('5')">5</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('6')">6</button>
       <button class = 'button operation-button'>-</button>
     </div>
     <div class = 'row4 row'>
-      <button class = 'button'>1</button>
-      <button class = 'button'>2</button>
-      <button class = 'button'>3</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('1')">1</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('2')">2</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('3')">3</button>
       <button class = 'button operation-button'>+</button>
     </div>
     <div class = 'row5 row'>
-      <button class = 'button number-0 stretched-button'>0</button>
-      <button class = 'button'>.</button>
+      <button class = 'button number-0 stretched-button' onclick="updateCurrentDisplayValue('0')">0</button>
+      <button class = 'button' onclick="updateCurrentDisplayValue('.')">.</button>
       <button class = 'button operation-button'>=</button>
     </div>
   </div>
